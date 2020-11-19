@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'VinIDLight' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for VinIDLight
+  pod 'RxCocoa'
+  pod 'RxSwift'
+  pod 'RealmSwift'
+  pod 'RxSwiftExt'
+  pod 'RxDataSources'
+  pod 'Action'
+  pod 'RIBs'
+
+  target 'VinIDLightTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'VinIDLightUITests' do
+    # Pods for testing
+  end
+
+end

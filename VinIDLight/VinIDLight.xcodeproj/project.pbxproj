@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05E15214256541D2001A05EB /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E151F2256541D2001A05EB /* AppComponent.swift */; };
+		05E15215256541D2001A05EB /* RMTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E151F5256541D2001A05EB /* RMTaskRepository.swift */; };
+		05E15216256541D2001A05EB /* InMemoryTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E151F6256541D2001A05EB /* InMemoryTaskRepository.swift */; };
+		05E15217256541D2001A05EB /* RemoteTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E151F7256541D2001A05EB /* RemoteTaskRepository.swift */; };
+		05E15218256541D2001A05EB /* RMTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E151F9256541D2001A05EB /* RMTask.swift */; };
+		05E15219256541D3001A05EB /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E151FA256541D2001A05EB /* DomainConvertibleType.swift */; };
+		05E1521A256541D3001A05EB /* CDTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E151FB256541D2001A05EB /* CDTask.swift */; };
+		05E1521B256541D3001A05EB /* TaskRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E151FE256541D2001A05EB /* TaskRepositoryType.swift */; };
+		05E1521C256541D3001A05EB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E15200256541D2001A05EB /* Task.swift */; };
+		05E1521E256541D3001A05EB /* CreateTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E15203256541D2001A05EB /* CreateTaskUseCase.swift */; };
+		05E1521F256541D3001A05EB /* FinishTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E15204256541D2001A05EB /* FinishTaskUseCase.swift */; };
+		05E15220256541D3001A05EB /* GetAllTasksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E15205256541D2001A05EB /* GetAllTasksUseCase.swift */; };
+		05E15221256541D3001A05EB /* DeleteAllTasksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E15206256541D2001A05EB /* DeleteAllTasksUseCase.swift */; };
+		05E15222256541D3001A05EB /* SearchTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E15207256541D2001A05EB /* SearchTaskUseCase.swift */; };
+		05E15223256541D3001A05EB /* DeleteTaskUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E15208256541D2001A05EB /* DeleteTaskUseCase.swift */; };
+		05E1524A2566151D001A05EB /* TaskListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E152422566151D001A05EB /* TaskListBuilder.swift */; };
+		05E1524B2566151D001A05EB /* TaskListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E152432566151D001A05EB /* TaskListRouter.swift */; };
+		05E1524C2566151D001A05EB /* TaskListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E152442566151D001A05EB /* TaskListInteractor.swift */; };
+		05E1524D2566151D001A05EB /* TaskListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E152452566151D001A05EB /* TaskListViewController.storyboard */; };
+		05E1524E2566151D001A05EB /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E152462566151D001A05EB /* TaskListViewController.swift */; };
+		05E1524F2566151D001A05EB /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E152482566151D001A05EB /* TaskCellViewModel.swift */; };
+		05E152502566151D001A05EB /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E152492566151D001A05EB /* TaskTableViewCell.swift */; };
+		116B98E9A6B384E6C08F6576 /* Pods_VinIDLight_VinIDLightUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D27A02E2959FAB77C07E0FF /* Pods_VinIDLight_VinIDLightUITests.framework */; };
+		5F5D0F6D237AA64600A62089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D0F6C237AA64600A62089 /* AppDelegate.swift */; };
+		5F5D0F76237AA64900A62089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D0F75237AA64900A62089 /* Assets.xcassets */; };
+		5F5D0F84237AA64900A62089 /* VinIDLightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D0F83237AA64900A62089 /* VinIDLightTests.swift */; };
+		5F5D0F8F237AA64A00A62089 /* VinIDLightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5D0F8E237AA64A00A62089 /* VinIDLightUITests.swift */; };
+		BD0DB1E737C54045EA89E2B9 /* Pods_VinIDLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17FCA6881DECE23E513D287D /* Pods_VinIDLight.framework */; };
+		C5731AAE93FF5EDED7456D7A /* Pods_VinIDLightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9045CCCCBEC97BAB439F8087 /* Pods_VinIDLightTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F5D0F80237AA64900A62089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F5D0F61237AA64600A62089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F5D0F68237AA64600A62089;
+			remoteInfo = VinIDLight;
+		};
+		5F5D0F8B237AA64A00A62089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F5D0F61237AA64600A62089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F5D0F68237AA64600A62089;
+			remoteInfo = VinIDLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E151F2256541D2001A05EB /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		05E151F5256541D2001A05EB /* RMTaskRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMTaskRepository.swift; sourceTree = "<group>"; };
+		05E151F6256541D2001A05EB /* InMemoryTaskRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMemoryTaskRepository.swift; sourceTree = "<group>"; };
+		05E151F7256541D2001A05EB /* RemoteTaskRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteTaskRepository.swift; sourceTree = "<group>"; };
+		05E151F9256541D2001A05EB /* RMTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMTask.swift; sourceTree = "<group>"; };
+		05E151FA256541D2001A05EB /* DomainConvertibleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
+		05E151FB256541D2001A05EB /* CDTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTask.swift; sourceTree = "<group>"; };
+		05E151FE256541D2001A05EB /* TaskRepositoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRepositoryType.swift; sourceTree = "<group>"; };
+		05E15200256541D2001A05EB /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		05E15203256541D2001A05EB /* CreateTaskUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskUseCase.swift; sourceTree = "<group>"; };
+		05E15204256541D2001A05EB /* FinishTaskUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishTaskUseCase.swift; sourceTree = "<group>"; };
+		05E15205256541D2001A05EB /* GetAllTasksUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllTasksUseCase.swift; sourceTree = "<group>"; };
+		05E15206256541D2001A05EB /* DeleteAllTasksUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAllTasksUseCase.swift; sourceTree = "<group>"; };
+		05E15207256541D2001A05EB /* SearchTaskUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTaskUseCase.swift; sourceTree = "<group>"; };
+		05E15208256541D2001A05EB /* DeleteTaskUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteTaskUseCase.swift; sourceTree = "<group>"; };
+		05E152422566151D001A05EB /* TaskListBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListBuilder.swift; sourceTree = "<group>"; };
+		05E152432566151D001A05EB /* TaskListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListRouter.swift; sourceTree = "<group>"; };
+		05E152442566151D001A05EB /* TaskListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListInteractor.swift; sourceTree = "<group>"; };
+		05E152452566151D001A05EB /* TaskListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskListViewController.storyboard; sourceTree = "<group>"; };
+		05E152462566151D001A05EB /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		05E152482566151D001A05EB /* TaskCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		05E152492566151D001A05EB /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		13193BA58C5BDD1B88408954 /* Pods-VinIDLight-VinIDLightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinIDLight-VinIDLightUITests.debug.xcconfig"; path = "Target Support Files/Pods-VinIDLight-VinIDLightUITests/Pods-VinIDLight-VinIDLightUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		17FCA6881DECE23E513D287D /* Pods_VinIDLight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VinIDLight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B0020D90C4F7802758E6969 /* Pods-VinIDLightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinIDLightTests.debug.xcconfig"; path = "Target Support Files/Pods-VinIDLightTests/Pods-VinIDLightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D27A02E2959FAB77C07E0FF /* Pods_VinIDLight_VinIDLightUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VinIDLight_VinIDLightUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4117DD9D063B23DCDADD8760 /* Pods-VinIDLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinIDLight.release.xcconfig"; path = "Target Support Files/Pods-VinIDLight/Pods-VinIDLight.release.xcconfig"; sourceTree = "<group>"; };
+		531E718C28089D95EC41FA50 /* Pods-VinIDLight-VinIDLightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinIDLight-VinIDLightUITests.release.xcconfig"; path = "Target Support Files/Pods-VinIDLight-VinIDLightUITests/Pods-VinIDLight-VinIDLightUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5F5D0F69237AA64600A62089 /* VinIDLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinIDLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5D0F6C237AA64600A62089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F5D0F75237AA64900A62089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F5D0F7A237AA64900A62089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5D0F7F237AA64900A62089 /* VinIDLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinIDLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5D0F83237AA64900A62089 /* VinIDLightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinIDLightTests.swift; sourceTree = "<group>"; };
+		5F5D0F85237AA64900A62089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5D0F8A237AA64A00A62089 /* VinIDLightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VinIDLightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5D0F8E237AA64A00A62089 /* VinIDLightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinIDLightUITests.swift; sourceTree = "<group>"; };
+		5F5D0F90237AA64A00A62089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EADD42FFFF5265611F0E394 /* Pods-VinIDLightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinIDLightTests.release.xcconfig"; path = "Target Support Files/Pods-VinIDLightTests/Pods-VinIDLightTests.release.xcconfig"; sourceTree = "<group>"; };
+		9045CCCCBEC97BAB439F8087 /* Pods_VinIDLightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VinIDLightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8EBCEFC34E96D503C87BF41 /* Pods-VinIDLight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VinIDLight.debug.xcconfig"; path = "Target Support Files/Pods-VinIDLight/Pods-VinIDLight.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F5D0F66237AA64600A62089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0DB1E737C54045EA89E2B9 /* Pods_VinIDLight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5D0F7C237AA64900A62089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5731AAE93FF5EDED7456D7A /* Pods_VinIDLightTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5D0F87237AA64A00A62089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116B98E9A6B384E6C08F6576 /* Pods_VinIDLight_VinIDLightUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05E151F1256541D2001A05EB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				05E151F2256541D2001A05EB /* AppComponent.swift */,
+				05E151F3256541D2001A05EB /* Data */,
+				05E151FC256541D2001A05EB /* Domain */,
+				05E15209256541D2001A05EB /* Presentation */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		05E151F3256541D2001A05EB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				05E151F4256541D2001A05EB /* Repository */,
+				05E151F8256541D2001A05EB /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		05E151F4256541D2001A05EB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				05E151F5256541D2001A05EB /* RMTaskRepository.swift */,
+				05E151F6256541D2001A05EB /* InMemoryTaskRepository.swift */,
+				05E151F7256541D2001A05EB /* RemoteTaskRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		05E151F8256541D2001A05EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05E151F9256541D2001A05EB /* RMTask.swift */,
+				05E151FA256541D2001A05EB /* DomainConvertibleType.swift */,
+				05E151FB256541D2001A05EB /* CDTask.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05E151FC256541D2001A05EB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				05E151FD256541D2001A05EB /* Repository */,
+				05E151FF256541D2001A05EB /* Model */,
+				05E15201256541D2001A05EB /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		05E151FD256541D2001A05EB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				05E151FE256541D2001A05EB /* TaskRepositoryType.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		05E151FF256541D2001A05EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05E15200256541D2001A05EB /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05E15201256541D2001A05EB /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				05E15203256541D2001A05EB /* CreateTaskUseCase.swift */,
+				05E15204256541D2001A05EB /* FinishTaskUseCase.swift */,
+				05E15205256541D2001A05EB /* GetAllTasksUseCase.swift */,
+				05E15206256541D2001A05EB /* DeleteAllTasksUseCase.swift */,
+				05E15207256541D2001A05EB /* SearchTaskUseCase.swift */,
+				05E15208256541D2001A05EB /* DeleteTaskUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		05E15209256541D2001A05EB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				05E152402566151D001A05EB /* TaskList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		05E152402566151D001A05EB /* TaskList */ = {
+			isa = PBXGroup;
+			children = (
+				05E152412566151D001A05EB /* RIBs */,
+				05E152472566151D001A05EB /* Views */,
+			);
+			path = TaskList;
+			sourceTree = "<group>";
+		};
+		05E152412566151D001A05EB /* RIBs */ = {
+			isa = PBXGroup;
+			children = (
+				05E152422566151D001A05EB /* TaskListBuilder.swift */,
+				05E152432566151D001A05EB /* TaskListRouter.swift */,
+				05E152442566151D001A05EB /* TaskListInteractor.swift */,
+				05E152452566151D001A05EB /* TaskListViewController.storyboard */,
+				05E152462566151D001A05EB /* TaskListViewController.swift */,
+			);
+			path = RIBs;
+			sourceTree = "<group>";
+		};
+		05E152472566151D001A05EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05E152482566151D001A05EB /* TaskCellViewModel.swift */,
+				05E152492566151D001A05EB /* TaskTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D2D87381DF4FB1F62DD8066 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17FCA6881DECE23E513D287D /* Pods_VinIDLight.framework */,
+				2D27A02E2959FAB77C07E0FF /* Pods_VinIDLight_VinIDLightUITests.framework */,
+				9045CCCCBEC97BAB439F8087 /* Pods_VinIDLightTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FEDF51B25870562C78283D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBCEFC34E96D503C87BF41 /* Pods-VinIDLight.debug.xcconfig */,
+				4117DD9D063B23DCDADD8760 /* Pods-VinIDLight.release.xcconfig */,
+				13193BA58C5BDD1B88408954 /* Pods-VinIDLight-VinIDLightUITests.debug.xcconfig */,
+				531E718C28089D95EC41FA50 /* Pods-VinIDLight-VinIDLightUITests.release.xcconfig */,
+				2B0020D90C4F7802758E6969 /* Pods-VinIDLightTests.debug.xcconfig */,
+				7EADD42FFFF5265611F0E394 /* Pods-VinIDLightTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F5D0F60237AA64600A62089 = {
+			isa = PBXGroup;
+			children = (
+				5F5D0F6B237AA64600A62089 /* VinIDLight */,
+				5F5D0F82237AA64900A62089 /* VinIDLightTests */,
+				5F5D0F8D237AA64A00A62089 /* VinIDLightUITests */,
+				5F5D0F6A237AA64600A62089 /* Products */,
+				4FEDF51B25870562C78283D2 /* Pods */,
+				3D2D87381DF4FB1F62DD8066 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F5D0F6A237AA64600A62089 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F5D0F69237AA64600A62089 /* VinIDLight.app */,
+				5F5D0F7F237AA64900A62089 /* VinIDLightTests.xctest */,
+				5F5D0F8A237AA64A00A62089 /* VinIDLightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F5D0F6B237AA64600A62089 /* VinIDLight */ = {
+			isa = PBXGroup;
+			children = (
+				5F5D0F6C237AA64600A62089 /* AppDelegate.swift */,
+				5F5D0F75237AA64900A62089 /* Assets.xcassets */,
+				05E151F1256541D2001A05EB /* Sources */,
+				5F5D0F7A237AA64900A62089 /* Info.plist */,
+			);
+			path = VinIDLight;
+			sourceTree = "<group>";
+		};
+		5F5D0F82237AA64900A62089 /* VinIDLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F5D0F83237AA64900A62089 /* VinIDLightTests.swift */,
+				5F5D0F85237AA64900A62089 /* Info.plist */,
+			);
+			path = VinIDLightTests;
+			sourceTree = "<group>";
+		};
+		5F5D0F8D237AA64A00A62089 /* VinIDLightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F5D0F8E237AA64A00A62089 /* VinIDLightUITests.swift */,
+				5F5D0F90237AA64A00A62089 /* Info.plist */,
+			);
+			path = VinIDLightUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F5D0F68237AA64600A62089 /* VinIDLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5D0F93237AA64A00A62089 /* Build configuration list for PBXNativeTarget "VinIDLight" */;
+			buildPhases = (
+				07D1C5A21B45C45FA4B87869 /* [CP] Check Pods Manifest.lock */,
+				5F5D0F65237AA64600A62089 /* Sources */,
+				5F5D0F66237AA64600A62089 /* Frameworks */,
+				5F5D0F67237AA64600A62089 /* Resources */,
+				38D3384ECED3E40CF3ECC597 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VinIDLight;
+			productName = VinIDLight;
+			productReference = 5F5D0F69237AA64600A62089 /* VinIDLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F5D0F7E237AA64900A62089 /* VinIDLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5D0F96237AA64A00A62089 /* Build configuration list for PBXNativeTarget "VinIDLightTests" */;
+			buildPhases = (
+				D7FCA5903E44948EA0E24502 /* [CP] Check Pods Manifest.lock */,
+				5F5D0F7B237AA64900A62089 /* Sources */,
+				5F5D0F7C237AA64900A62089 /* Frameworks */,
+				5F5D0F7D237AA64900A62089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F5D0F81237AA64900A62089 /* PBXTargetDependency */,
+			);
+			name = VinIDLightTests;
+			productName = VinIDLightTests;
+			productReference = 5F5D0F7F237AA64900A62089 /* VinIDLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F5D0F89237AA64A00A62089 /* VinIDLightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5D0F99237AA64A00A62089 /* Build configuration list for PBXNativeTarget "VinIDLightUITests" */;
+			buildPhases = (
+				CA71BCB571D12E51D19E1920 /* [CP] Check Pods Manifest.lock */,
+				5F5D0F86237AA64A00A62089 /* Sources */,
+				5F5D0F87237AA64A00A62089 /* Frameworks */,
+				5F5D0F88237AA64A00A62089 /* Resources */,
+				782129AF345FA8731EA3C98F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F5D0F8C237AA64A00A62089 /* PBXTargetDependency */,
+			);
+			name = VinIDLightUITests;
+			productName = VinIDLightUITests;
+			productReference = 5F5D0F8A237AA64A00A62089 /* VinIDLightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F5D0F61237AA64600A62089 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = VinID;
+				TargetAttributes = {
+					5F5D0F68237AA64600A62089 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					5F5D0F7E237AA64900A62089 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 5F5D0F68237AA64600A62089;
+					};
+					5F5D0F89237AA64A00A62089 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 5F5D0F68237AA64600A62089;
+					};
+				};
+			};
+			buildConfigurationList = 5F5D0F64237AA64600A62089 /* Build configuration list for PBXProject "VinIDLight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F5D0F60237AA64600A62089;
+			productRefGroup = 5F5D0F6A237AA64600A62089 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F5D0F68237AA64600A62089 /* VinIDLight */,
+				5F5D0F7E237AA64900A62089 /* VinIDLightTests */,
+				5F5D0F89237AA64A00A62089 /* VinIDLightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F5D0F67237AA64600A62089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E1524D2566151D001A05EB /* TaskListViewController.storyboard in Resources */,
+				5F5D0F76237AA64900A62089 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5D0F7D237AA64900A62089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5D0F88237AA64A00A62089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07D1C5A21B45C45FA4B87869 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VinIDLight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38D3384ECED3E40CF3ECC597 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VinIDLight/Pods-VinIDLight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VinIDLight/Pods-VinIDLight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VinIDLight/Pods-VinIDLight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		782129AF345FA8731EA3C98F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VinIDLight-VinIDLightUITests/Pods-VinIDLight-VinIDLightUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VinIDLight-VinIDLightUITests/Pods-VinIDLight-VinIDLightUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VinIDLight-VinIDLightUITests/Pods-VinIDLight-VinIDLightUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA71BCB571D12E51D19E1920 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VinIDLight-VinIDLightUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7FCA5903E44948EA0E24502 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VinIDLightTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F5D0F65237AA64600A62089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E1524F2566151D001A05EB /* TaskCellViewModel.swift in Sources */,
+				05E1524A2566151D001A05EB /* TaskListBuilder.swift in Sources */,
+				05E152502566151D001A05EB /* TaskTableViewCell.swift in Sources */,
+				05E15215256541D2001A05EB /* RMTaskRepository.swift in Sources */,
+				05E1521B256541D3001A05EB /* TaskRepositoryType.swift in Sources */,
+				05E1521C256541D3001A05EB /* Task.swift in Sources */,
+				05E1524C2566151D001A05EB /* TaskListInteractor.swift in Sources */,
+				05E1521F256541D3001A05EB /* FinishTaskUseCase.swift in Sources */,
+				05E15222256541D3001A05EB /* SearchTaskUseCase.swift in Sources */,
+				05E1521A256541D3001A05EB /* CDTask.swift in Sources */,
+				05E15221256541D3001A05EB /* DeleteAllTasksUseCase.swift in Sources */,
+				05E1524E2566151D001A05EB /* TaskListViewController.swift in Sources */,
+				05E15219256541D3001A05EB /* DomainConvertibleType.swift in Sources */,
+				05E15216256541D2001A05EB /* InMemoryTaskRepository.swift in Sources */,
+				05E15217256541D2001A05EB /* RemoteTaskRepository.swift in Sources */,
+				5F5D0F6D237AA64600A62089 /* AppDelegate.swift in Sources */,
+				05E15214256541D2001A05EB /* AppComponent.swift in Sources */,
+				05E1524B2566151D001A05EB /* TaskListRouter.swift in Sources */,
+				05E15223256541D3001A05EB /* DeleteTaskUseCase.swift in Sources */,
+				05E15220256541D3001A05EB /* GetAllTasksUseCase.swift in Sources */,
+				05E1521E256541D3001A05EB /* CreateTaskUseCase.swift in Sources */,
+				05E15218256541D2001A05EB /* RMTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5D0F7B237AA64900A62089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5D0F84237AA64900A62089 /* VinIDLightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5D0F86237AA64A00A62089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5D0F8F237AA64A00A62089 /* VinIDLightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F5D0F81237AA64900A62089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F5D0F68237AA64600A62089 /* VinIDLight */;
+			targetProxy = 5F5D0F80237AA64900A62089 /* PBXContainerItemProxy */;
+		};
+		5F5D0F8C237AA64A00A62089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F5D0F68237AA64600A62089 /* VinIDLight */;
+			targetProxy = 5F5D0F8B237AA64A00A62089 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5F5D0F91237AA64A00A62089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F5D0F92237AA64A00A62089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F5D0F94237AA64A00A62089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8EBCEFC34E96D503C87BF41 /* Pods-VinIDLight.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VinIDLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinID.VinIDLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5F5D0F95237AA64A00A62089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4117DD9D063B23DCDADD8760 /* Pods-VinIDLight.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VinIDLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinID.VinIDLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5F5D0F97237AA64A00A62089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B0020D90C4F7802758E6969 /* Pods-VinIDLightTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VinIDLightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinID.VinIDLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VinIDLight.app/VinIDLight";
+			};
+			name = Debug;
+		};
+		5F5D0F98237AA64A00A62089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EADD42FFFF5265611F0E394 /* Pods-VinIDLightTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VinIDLightTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinID.VinIDLightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VinIDLight.app/VinIDLight";
+			};
+			name = Release;
+		};
+		5F5D0F9A237AA64A00A62089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13193BA58C5BDD1B88408954 /* Pods-VinIDLight-VinIDLightUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VinIDLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinID.VinIDLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VinIDLight;
+			};
+			name = Debug;
+		};
+		5F5D0F9B237AA64A00A62089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531E718C28089D95EC41FA50 /* Pods-VinIDLight-VinIDLightUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VinIDLightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VinID.VinIDLightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VinIDLight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F5D0F64237AA64600A62089 /* Build configuration list for PBXProject "VinIDLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5D0F91237AA64A00A62089 /* Debug */,
+				5F5D0F92237AA64A00A62089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F5D0F93237AA64A00A62089 /* Build configuration list for PBXNativeTarget "VinIDLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5D0F94237AA64A00A62089 /* Debug */,
+				5F5D0F95237AA64A00A62089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F5D0F96237AA64A00A62089 /* Build configuration list for PBXNativeTarget "VinIDLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5D0F97237AA64A00A62089 /* Debug */,
+				5F5D0F98237AA64A00A62089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F5D0F99237AA64A00A62089 /* Build configuration list for PBXNativeTarget "VinIDLightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5D0F9A237AA64A00A62089 /* Debug */,
+				5F5D0F9B237AA64A00A62089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F5D0F61237AA64600A62089 /* Project object */;
+}

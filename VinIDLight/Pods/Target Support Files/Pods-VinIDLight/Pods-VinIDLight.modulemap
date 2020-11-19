@@ -1,0 +1,6 @@
+framework module Pods_VinIDLight {
+  umbrella header "Pods-VinIDLight-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_VinIDLight_VinIDLightUITests {
+  umbrella header "Pods-VinIDLight-VinIDLightUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
